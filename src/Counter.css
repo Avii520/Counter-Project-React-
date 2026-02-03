@@ -1,0 +1,66 @@
+
+#Counter {
+    background-color: #1c3a1b; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    border: 2.5px solid #141414;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#Counter h1 {
+    color: #e7e2e2;
+    margin-bottom: 10px;
+}
+
+#Counter h2 {
+    font-size: 60px;
+    color: #007bff; 
+    margin: 20px 0;
+}
+.Button {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+}
+button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+}
+
+button:last-child {
+    background-color: #6c757d;
+     
+}
+button:last-child:hover{
+    background-color: rgb(230, 40, 40);
+     transition: 0.3s;
+}
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); color: #28a745; }
+  100% { transform: scale(1); }
+}
+.animate-pop {
+  animation: pop 0.3s ease-out;
+}
+button:active {
+  transform: scale(0.95);
+}
